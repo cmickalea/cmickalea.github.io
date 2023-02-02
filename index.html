@@ -1,8 +1,38 @@
-<html>
-  <head></head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Document</title>
+  </head>
   <body>
-    <a href="goals.html"><img src="http://i.imgur.com/dosK05U.gif" /></a>
-    <br />
-    <a href="worries.html"><img src="http://i.imgur.com/2s0HwpM.gif" /></a>
+    <header class="header">
+      <h1 class="page-title">All About Books</h1>
+    </header>
+    <form>
+      <div class="search-by-book-title">
+        <input class="search-by-book-title__input" type="text" name="search by book title" placeholder="Search By Book Title..." />
+        <input class="search-by-book-title__submit" type="submit" name="search" value="search" />
+      </div>
+      <div class="search-by-author">
+        <input class="search-by-author__input" type="text" name="search by author" placeholder="Search By Author's Name..." />
+        <input class="search-by-author__submit" type="submit" name="search" value="search" />
+      </div>
+    </form>
+
+    <div class="previously-searched hide"></div>
+    <div class="search-results"></div>
+
+    <script src="app.js"></script>
   </body>
 </html>

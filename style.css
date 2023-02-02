@@ -1,0 +1,64 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+    margin-top: 3.5rem;
+}
+
+input {
+    height: 35px;
+    padding: 6px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.header {
+  padding: 8vw;
+  background-color: #b6341c;
+}
+
+.page-title {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: calc(1px + 8vw);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.search-by-book-title {
+    margin-bottom: 1.5rem !important;
+}
+
+.search-by-book-title,
+.search-by-author {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.search-by-book-title__input,
+.search-by-author__input {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.search-by-book-title__submit,
+.search-by-author__submit {
+    width: 22%;
+    background-color: #d5bb9e;
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 1.5vw;
+  }
+
+  .page-title {
+    font-size: calc(1px + 5vw);
+  }
+}
+
