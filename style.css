@@ -3,6 +3,17 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.about-app {
+  font-style: italic;
+  color: #d5bb9e;
+  margin: 1rem 0;
 }
 
 form {
@@ -22,34 +33,60 @@ input {
 }
 
 .page-title {
-  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: calc(1px + 8vw);
   color: #fff;
   letter-spacing: 1px;
 }
 
-.search-by-book-title {
+.search-food-item {
     margin-bottom: 1.5rem !important;
 }
 
-.search-by-book-title,
-.search-by-author {
+.search-food-item {
     width: 85%;
     margin: 0 auto;
 }
 
-.search-by-book-title__input,
-.search-by-author__input {
+.search-food-item__input {
     width: 75%;
     margin: 0 auto;
 }
 
-.search-by-book-title__submit,
-.search-by-author__submit {
+.search-food-item__submit {
     width: 22%;
     background-color: #d5bb9e;
     border-radius: 4px;
+}
+
+.about-food {
+  width: 100%;
+  text-align: center;
+}
+
+.food-image {
+  width: 80%
+}
+
+.nutritional-facts {
+  font-size: calc(1px + 4vw);
+  margin: 1rem 0;
+}
+
+table {
+  margin: 1rem auto 0;
+  font-size: calc(1px + 3vw);
+  width: 80%;
+}
+
+hr {
+  margin: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -59,6 +96,47 @@ input {
 
   .page-title {
     font-size: calc(1px + 5vw);
+  }
+
+  .about-food {
+    display: flex;
+    height: 350px;
+    width: 80%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nutritional-facts {
+    width: 100%;
+    /* display: inline-table; */
+    /* flex: 1; */
+    list-style: none;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: calc(1px + 1.7vw);
+  }
+
+  .img-section {
+    width: 50%;
+  }
+
+  .info-section {
+    width: 50%;
+  }
+
+  hr {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  table {
+    width: 100%;
+    margin: 1.5rem auto 0;
+    font-size: calc(1px + 1.3vw);
   }
 }
 
